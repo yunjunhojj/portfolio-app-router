@@ -1,14 +1,16 @@
 import portfolios from "@/content/portfolios.json";
 import blogs from "@/content/blogs.json";
+import Image from "next/image";
+import BlogList from "@/components/blogs/BlogList";
+import PortfolioList from "@/components/portfolios/portfolioList";
 
 export default function Home() {
   return (
     <>
-      <div>hello world</div>
-      <div> ------------------ </div>
-      <div>{JSON.stringify(portfolios)}</div>
-      <div> ------------------ </div>
-      <div>{JSON.stringify(blogs)}</div>
+      <div>
+        <BlogList blogs={blogs} />
+        <PortfolioList portfolios={portfolios} />
+      </div>
     </>
   );
 }
