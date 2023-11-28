@@ -1,3 +1,40 @@
-body {
-  padding: 100px;
+.page-conainer {
+  padding: 200px;
+}
+
+.content-section-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.content-list {
+  display: flex;
+  padding: 10px;
+}
+
+.content-item {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.content-item__image-container {
+  position: relative;
+  height: 200px;
+}
+
+.content-item__header {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.content-item__header > div:nth-child(1) {
+  font-size: 20px;
 }
